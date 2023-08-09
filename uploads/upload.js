@@ -7,7 +7,7 @@ form.addEventListener('submit', async (event) => {
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('http://192.168.43.37:5000/upload', {
+        const response = await fetch('https://urlfromimage-4jtw.onrender.com/upload', {
             method: 'POST',
             body: formData,
             headers: {

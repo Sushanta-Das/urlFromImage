@@ -12,6 +12,11 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 number = 1
 
 
+@app.route('/')
+def showInfo():
+    return "hello, image to Url converter is live"
+
+
 @app.route('/upload', methods=['POST'])
 def upload():
     if 'file' not in request.files:
